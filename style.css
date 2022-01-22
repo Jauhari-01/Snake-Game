@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Lato:wght@100;300;400;700&family=Rubik+Beastly&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background: url("./bg-image.jpg");
+    background-size: 100vw 100vh;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#scoreBox{
+    font-family: 'Rubik Beastly', cursive;
+    position: absolute;
+    top: 5vw;
+    right: 7vw;
+    font-size: 3vw;
+    color: white;
+}
+#hiscoreBox{
+    font-family: 'Rubik Beastly', cursive;
+    position: absolute;
+    top: 9vw;
+    right: 4vw;
+    font-size: 3vw;
+    color: white;
+}
+#board{
+    background: linear-gradient(rgba(8, 226, 8, 0.486),rgb(221, 221, 62));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+
+}
+
+.snake-head{
+    background: linear-gradient(rgba(131, 230, 225, 0.692),rgb(92, 78, 124));
+    border-top: 2px solid blue;
+    transform: scale(1.10);
+    border-radius: 25px/50px;
+}
+.snake-body{
+    background: linear-gradient(rgba(136, 211, 224, 0.363),rgb(90, 95, 105));
+    border: 2px solid rgb(247, 247, 248);
+    border-radius: 100px/50px ;
+}
+
+.food{
+    background: linear-gradient(rgba(99, 33, 223, 0.486),rgb(231, 152, 120));
+    border-radius: 22px;
+}
